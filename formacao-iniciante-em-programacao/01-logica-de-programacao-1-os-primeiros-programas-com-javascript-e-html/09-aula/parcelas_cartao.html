@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<script>
+	var parcelas = [10.40, 40.00, 100.18, 200];
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	mostra("Essas são as parcelas do seu cartão:");
+	
+	for(var i = 0; i < parcelas.length; i++){
+		mostra("R$" + parcelas[i] + ".");
+	}
+</script>

@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+	var loginCadastrado = "alura";
+	var senhaCadastrado = "alura123";
+	var tentativas = 1;
+
+	while(tentativas <= 3) {
+		var loginInformado = prompt("Informe o seu login:");
+		var senhaInformada = prompt("Informe a sua senha:");
+		
+		if(loginInformado == loginCadastrado && senhaInformada == senhaCadastrado) {
+			alert("Login efetuado com sucesso!");
+			break;
+		} else {
+			alert("Acesso negado! Você tem mais " + (3 - tentativas) + "!");
+			tentativas++;
+			
+			if(tentativas > 3) {
+				alert("Acesso bloqueado! Você excedeu o limite de tentativas.");
+			}
+		}
+	}
+</script>

@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+
+<script>
+	var nomeInformado = prompt("Qual é o seu nome?");
+	var idadeInformada = parseInt(prompt(nomeInformado + ", quantos anos você tem?"));
+	var temHabilitacao = prompt(nomeInformado + ", você têm habilitação? Responda com S ou N:");
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	if(idadeInformada >= 18 && temHabilitacao == "S" || temHabilitacao == "s" || temHabilitacao == "SIM" || temHabilitacao == "sim" || temHabilitacao == "Sim") {
+		mostra(nomeInformado + ", você pode dirigir!");
+	} else {
+		mostra(nomeInformado + ", você ainda não pode dirigir.");
+	}
+</script>

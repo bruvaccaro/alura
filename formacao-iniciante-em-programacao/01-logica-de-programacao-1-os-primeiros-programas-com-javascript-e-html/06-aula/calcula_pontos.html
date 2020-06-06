@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	var nomeTime = prompt("Entre com o nome do time:");
+	var vitorias = parseInt(prompt("Entre com o número de vitórias:"));
+	var empates = parseInt(prompt("Entre com o número de empates:"));
+	var pontos = (vitorias * 3) + empates;
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	if(pontos > 28) {
+		mostra("O número de pontos do " + nomeTime + " é " + pontos + " e a sua classificação está melhor em relação ao ano passado.");
+	}
+
+	if(pontos < 29) {
+		mostra("O número de pontos do " + nomeTime + " é " + pontos + " e a sua classificação está pior em relação ao ano passado.");
+	}
+
+	if(pontos == 28) {
+		mostra("O número de pontos do " + nomeTime + " é " + pontos + " e a sua classificação está igual em relação ao ano passado.");
+	}
+</script>

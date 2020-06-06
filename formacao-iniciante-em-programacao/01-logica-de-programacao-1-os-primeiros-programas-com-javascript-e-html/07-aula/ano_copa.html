@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+
+<script>
+	var anoAtual = parseInt(prompt("Até que ano você gostaria de ver se teve copa?"));
+	var anoCopa = 1930;
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	mostra("Teve copa em:");
+
+	while (anoCopa <= anoAtual) {
+		mostra(anoCopa);
+		anoCopa = anoCopa + 4;
+	}
+</script>

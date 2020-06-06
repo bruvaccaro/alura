@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+
+<script>
+	var anoInicio = 1500;
+	var anoFim = 2018;
+	var mediaAnos = 28;
+	var resultadoGeracoes = Math.round((anoFim - anoInicio) / mediaAnos);
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	mostra("Houve " + resultadoGeracoes + " gerações desde " + anoInicio + " até " + anoFim + ".");
+</script>
